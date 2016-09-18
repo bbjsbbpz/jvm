@@ -1,0 +1,23 @@
+package bbjs.practice.thread;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class DiningPhilosophers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int ponder = 5;
+		int size = 5;
+		ExecutorService exec = Executors.newCachedThreadPool();
+		Chopstick[] sticks = new Chopstick[size];
+		for(int i=0;i<size;i++){
+			sticks[i] = new Chopstick();
+		}
+		for(int i=0;i<size;i++){
+			exec.execute(new Philosopher(sticks[i], sticks[(i+1)%size], i, ponder));//dead lock
+		}
+		exec.shutdown();
+	}
+
+}

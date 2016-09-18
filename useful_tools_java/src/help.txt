@@ -1,0 +1,29 @@
+http://blog.jobbole.com/79252/
+在 XML 中，有 5 个预定义的实体引用：
+&lt;    <   小于
+&gt;    >   大于
+&amp;   &   和号
+'  '   单引号
+&quot;  "   引号
+
+http://www.yiibai.com/json/json_java_example.html
+JSON	Java
+string	java.lang.String
+number	java.lang.Number
+true|false	java.lang.Boolean
+null	null
+array	java.util.List
+object	java.util.Map
+
+\s 空格字符(空格键, tab, 换行, 换页, 回车) 
+\S 非空格字符([^\s])
+\d 一个数字，（相当于[0-9]  ）
+\D  一个非数字的字符，（相当于[^0-9] ）
+\w 一个单词字符(word character) （相当于 [a-zA-Z_0-9] ）
+\W 一个非单词的字符，[^\w]
+^ 一行的开始
+$ 一行的结尾
+\b 一个单词的边界 
+\B 一个非单词的边界
+\G 前一个匹配的结束
+[] 匹配方括号内的一个字符

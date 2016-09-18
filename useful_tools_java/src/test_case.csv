@@ -1,0 +1,5 @@
+ID,Function,TestData,Expected Result,Actual Result,Status,Remark
+1,isLeapYear,2015,FALSE,FALSE,pass,
+1,isLeapYear,2100,FALSE,FALSE,pass,
+1,isLeapYear,2000,TRUE,TRUE,pass,
+1,isLeapYear,2004,TRUE,TRUE,pass,
